@@ -1,6 +1,13 @@
 # youtube-data-pipeline-and-analysis
 Data pipeline and analysis of Youtube data, such as playlists 
 
+## Background & Overview:
+
+The purpose of this project is to implement some data cleaning, pipelines, and analysis of Youtube data for one's YT account, with a special focus on playlists.
+
+Why might you want to do this? 
+What if we could store some of our personal YT playlist data into a SQL table? If you have a large, sprawling number of playlists, we could more easily organize and access certain videos by storing them in a SQL table. We could then run SQL queries to get specific YT videos that we can watch, without having to always access the YT app merely to access our own playlists and user data. In addition, organizing the data in a SQL table could be useful for some users.
+
 Step 0:
 To get access to our own personal Youtube playlist data (ie, from one's own personal account), we must first access Google Takeout. Access the following URL:  <https://takeout.google.com/settings/takeout>. On this page, be sure to select "YouTube and YouTube Music", and then you will receive an email containing a zipped file comprising 1 or more CSV files.
 
@@ -9,6 +16,8 @@ Step 1: SQL database setup
 For this project, we will first create a SQL database & table, in which we will store the data. 
 
 Step 2: Data cleaning
+
+The data cleaning will entail primarily 2 steps:
 
 Iterate through the CSV files containing the Youtube data. Create a new column comprising the Youtube URL. This is actually fairly straightforward since the CSV files already have the unique video IDs. 
 
