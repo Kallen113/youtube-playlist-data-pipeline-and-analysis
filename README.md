@@ -16,7 +16,7 @@ Second, we need to take the CSV file names, and create a new column--say "video_
 
 Finally, with the cleaned & processed data, we will export the data to a single cleaned CSV file in a separate playlists_cleaned_data directory. This way, we can readily import this CSV file, implement just a bit more data cleaning & transformations, and then ingest the data directly into a SQL table. 
 
-This CSV file will be named by today's date, so that we can add additional such files as we grab newer Google Takeout data. 
+This CSV file will be named by today's date, so that we can add additional such files as we grab newer Google Takeout data and execute this project's scripts over multiple times. 
 
 Step 3: ETL data pipeline:
 
